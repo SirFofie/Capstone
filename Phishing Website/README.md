@@ -1,5 +1,5 @@
 # Phishing Website Auditor
 
 * PyTorch NN
-* PyTorch DN
+* PyTorch DNN
 * XGBoost
