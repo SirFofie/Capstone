@@ -33,7 +33,7 @@ async function runExample() {
   x[28] = document.getElementById('box28').value;
   x[29] = document.getElementById('box29').value;
 
-  let tensorX = new ort.Tensor( 'float32', x, [ 1, 30 ] );
+  let tensorX = new ort.Tensor( 'float32', x, [ 1, 31 ] );
   let feeds = {float_input: tensorX};
   
   let session = await ort.InferenceSession.create('xgboost_Phishing_ort.onnx');
