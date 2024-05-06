@@ -44,7 +44,7 @@ async function runExample() {
 
   let outputData = outputMap.get('output1');
 
-  let predicitions = document.getElementById('predictions');
+  let predictions = document.getElementById('predictions');
 
   predictions.innerHTML = ` <hr> My Educated Guess: <br/>
   <table> 
