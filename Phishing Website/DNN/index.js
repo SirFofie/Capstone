@@ -41,7 +41,7 @@ async function runExample() {
 
   let outputMap = await session.run([tensorX]);
 
-  let outputData = outputMap.get('output1')
+  let outputData = outputMap.get('output1');
 
   let predicitions = document.getElementById('predictions');
 
@@ -49,7 +49,7 @@ async function runExample() {
   <table> 
     <tr> 
       <td> This Is A Phishing Website </td>
-      <td id="td0"> ${outputData.data[0]} </td>
+      <td id="td0"> ${outputData.data[0].toFixed(2)} </td>
     </tr>
   </table>
   `;
