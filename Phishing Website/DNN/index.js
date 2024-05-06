@@ -44,5 +44,16 @@ async function runExample() {
   let outputData = outputMap.get('output1')
 
   let predicitions = document.getElementById('predictions');
+
+  predicitions.innerHTML = ` <hr> My Educated Guess: <br/>
+  <table> 
+    <tr> 
+      <td> This Is A Phishing Website </td>
+      <td id="td0"> ${outputData.data[0].toFixed(2)} </td>
+    </tr>
+  </table>
+
+
+  `;
   
 }
