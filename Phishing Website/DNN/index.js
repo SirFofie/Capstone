@@ -1,4 +1,4 @@
-async function runExample1() {
+async function runExample() {
   
   var x = [];
   
