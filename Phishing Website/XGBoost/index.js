@@ -40,7 +40,7 @@ async function runExample() {
   let result = await session.run(feeds);
   let outputData = result.variable.data;
 
-  outputData = parseFloat(outputData)
+  outputData = parseFloat(outputData).toFixed(2)
 
   let predicitions = document.getElementById('predictions');
 
