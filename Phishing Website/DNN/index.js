@@ -33,5 +33,16 @@ async function runExample() {
   x[28] document.getElementById('box28').value;
   x[29] document.getElementById('box29').value;
 
-  let tensorX = new onnx.Tensor( x, 'float32', [ 1, 30 ] )
+  let tensorX = new onnx.Tensor( x, 'float32', [ 1, 30 ] );
+
+  let session = new onnx.InferenceSession();
+
+  await session.loadModel("./Phishing-DL-net.onnx");
+
+  let outputMap = await session.run([tensorX]);
+
+  let outputData = outputMap.get('output1')
+
+  let predicitions = document.getElementById('predictions');
+  
 }
