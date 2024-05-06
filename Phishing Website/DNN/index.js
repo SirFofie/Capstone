@@ -46,7 +46,7 @@ async function runExample() {
 
   let predicitions = document.getElementById('predictions');
 
-  predicitions.innerHTML = ` <hr> My Educated Guess: <br/>
+  predictions.innerHTML = ` <hr> My Educated Guess: <br/>
   <table> 
     <tr> 
       <td> This Is A Phishing Website </td>
