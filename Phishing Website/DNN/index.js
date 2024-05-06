@@ -1,6 +1,5 @@
 async function runExample() {
   
-  var x = new Float32Array( 1, 30 );
   var x = [];
   
   x[0] = document.getElementById('box0').value;
