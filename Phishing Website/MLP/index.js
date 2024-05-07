@@ -49,7 +49,7 @@ async function runExample() {
   <table> 
     <tr> 
       <td> This Is A Phishing Website </td>
-      <td id="td0"> ${outputData.data[0].toFixed(2)} </td>
+      <td id="td0"> ${outputData.data} </td>
     </tr>
   </table>
   `;
